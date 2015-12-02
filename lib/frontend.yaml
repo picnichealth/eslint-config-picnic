@@ -1,0 +1,45 @@
+---
+  extends: picnic/default
+  ecmaFeatures:
+    jsx: true
+  env:
+    browser: true
+    es6: true
+  globals:
+    # TODO: break these into more specific files
+    analytics: true
+    App: true
+    Bloodhound: true
+    FB: true
+    FormData: true
+    PDFViewerApplication: true
+    StripeCheckout: true
+  parser:
+    babel-eslint
+  plugins:
+    - react
+  rules:
+    react/display-name: 0 # TODO: make 2
+    react/jsx-boolean-value:
+      - 0 # TODO: make 2
+      - "always"
+    react/jsx-no-undef: 2
+    react/jsx-quotes:
+      - 0 # TODO: make 2
+      - "single"
+      - "avoid-escape"
+    react/jsx-sort-prop-types: 0 # TODO: Evaluate
+    react/jsx-sort-props: 0 # TODO: Evaluate
+    react/jsx-uses-react: 2
+    react/jsx-uses-vars: 2
+    react/no-did-mount-set-state: 2
+    react/no-did-update-set-state: 2
+    react/no-multi-comp: 0 # TODO: Evalutate
+    react/no-unknown-property: 2
+    react/prop-types: 0 # TODO: make 2
+    react/react-in-jsx-scope: 2
+    react/require-extension: 0 # TODO: make 2
+    react/self-closing-comp: 2
+    react/sort-comp: 0 # TODO: make 2 and configure
+    react/wrap-multilines: 0 # TODO: Evaluate. Make 2 after can specify only
+                             #       for components with children

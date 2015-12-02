@@ -1,0 +1,5 @@
+---
+  extends: picnic/default
+  env:
+    jasmine: true
+    mocha: true
