@@ -1,8 +1,13 @@
 ---
   ecmaFeatures:
     arrowFunctions: true
+    binaryLiterals: true
     blockBindings: true
     classes: true
+    objectLiteralShorthandMethods: true
+    objectLiteralShorthandProperties: true
+    octalLiterals: true
+    templateStrings: true
   env:
     node: true
     browser: true
@@ -265,8 +270,8 @@
         markers:
           - "*"
     strict:
-      - 2
-      - "never" # TODO: switch to "global"
+      - 0 # TODO: switch to 2
+      - "global"
     use-isnan: 2
     valid-jsdoc:
       - 0 # TODO: Make 2
