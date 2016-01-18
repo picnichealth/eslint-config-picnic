@@ -1,3 +1,6 @@
+# v0.1.2
+- Updates Node 4.x ES2015 features
+
 # v0.1.1
 - Adds ES2015 features available in Node 4.x to defaults
 
