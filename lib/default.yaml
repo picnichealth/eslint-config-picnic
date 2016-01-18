@@ -4,10 +4,13 @@
     binaryLiterals: true
     blockBindings: true
     classes: true
+    generators: true
     objectLiteralShorthandMethods: true
     objectLiteralShorthandProperties: true
+    objectLiteralComputedProperties: true
     octalLiterals: true
     templateStrings: true
+    unicodeCodePointEscapes: true
   env:
     node: true
     browser: true
