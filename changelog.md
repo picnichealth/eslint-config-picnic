@@ -1,3 +1,8 @@
+# NEXT
+
+# v0.1.3
+- Add react eslint plugin
+
 # v0.1.2
 - Updates Node 4.x ES2015 features
 
