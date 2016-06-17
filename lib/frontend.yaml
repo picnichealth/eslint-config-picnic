@@ -1,7 +1,8 @@
 ---
   extends: picnic/default
-  ecmaFeatures:
-    jsx: true
+  parserOptions:
+    ecmaFeatures:
+      jsx: true
   env:
     browser: true
     es6: true

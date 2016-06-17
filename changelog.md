@@ -1,5 +1,8 @@
 # NEXT
 
+# v0.2.0
+- Update to work with ESLint 2.x, eslint-plugin-react 5.x
+
 # v0.1.3
 - Add react eslint plugin
 
