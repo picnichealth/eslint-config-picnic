@@ -1,6 +1,9 @@
 # NEXT
 
-# v0.2.0
+# v0.2.2
+- [BUGFIX] Remove duplicate rule
+
+# v0.2.1
 - [BUGFIX] Specify sourceType for frontend
 
 # v0.2.0
