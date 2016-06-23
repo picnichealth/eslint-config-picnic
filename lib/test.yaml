@@ -3,3 +3,11 @@
   env:
     jasmine: true
     mocha: true
+  plugins:
+    - import
+  settings:
+    import/core-modules:
+      - bluebird
+      - chai
+  rules:
+    import/no-extraneous-dependencies: 0 # TODO make 2 when can selectively ignore
