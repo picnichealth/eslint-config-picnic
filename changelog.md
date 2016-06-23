@@ -1,5 +1,8 @@
 # NEXT
 
+# v0.3.1
+- Add chai and bluebird to test environment
+
 # v0.3.0
 - Add rules for eslint-plugin-import
 
