@@ -20,18 +20,48 @@
     babel-eslint
   plugins:
     - react
+    - import
+  settings:
+    import/extensions:
+      - .json
+      - .js
+      - .jsx
+    import/resolver:
+      node:
+        extensions:
+          - .js
+          - .jsx
+    import/ignore:
+      - node_modules
+      - \.css$
   rules:
+    import/default: 0 # TODO make 2
+    import/named: 0 # TODO make 2
+    import/no-common-js: 0 # TODO make 2
+    jsx-quotes:
+      - 2
+      - "prefer-single"
     react/display-name: 0 # TODO: make 2
     react/jsx-boolean-value:
-      - 0 # TODO: make 2
+      - 2
       - "always"
+    react/jsx-closing-bracket-location:
+      - 2
+      -
+        nonEmpty: 'after-props'
+        selfClosing: 'after-props'
+    react/jsx-curly-spacing:
+      - 2
+      - "never"
+    react/jsx-equals-spacing:
+      - 2
+      - "never"
     react/jsx-no-undef: 2
-    react/jsx-quotes:
-      - 0 # TODO: make 2
-      - "single"
-      - "avoid-escape"
     react/jsx-sort-prop-types: 0 # TODO: Evaluate
     react/jsx-sort-props: 0 # TODO: Evaluate
+    react/jsx-space-before-closing:
+      - 2
+      - "never"
     react/jsx-uses-react: 2
     react/jsx-uses-vars: 2
     react/no-did-mount-set-state: 2

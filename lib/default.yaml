@@ -18,6 +18,9 @@
     browser: true
     builtin: true
     es6: true
+  plugins:
+    - lodash
+    - import
   rules:
     no-alert: 2
     no-array-constructor: 2
@@ -106,7 +109,7 @@
     no-sync: 0 # TODO: make 2
     no-ternary: 0
     no-trailing-spaces: 2
-    no-this-before-super: 0 # TODO: Evaluate with ES6
+    no-this-before-super: 2
     no-throw-literal: 2
     no-undef: 2
     no-undef-init: 2
@@ -123,8 +126,8 @@
         args: "none"
     no-use-before-define: 0 # TODO: make 2
     no-void: 0
-    no-var: 0 # TODO: Evaluate with ES6
-    prefer-const: 0 # TODO: Evaluate with ES6
+    no-var: 0 # TODO make 2
+    prefer-const: 0 # TODO make 2
     no-warning-comments:
       - 1
       -
@@ -149,7 +152,7 @@
     comma-dangle:
       - 2
       - "never"
-    comma-spacing: 0 # TODO: make 2
+    comma-spacing: 2
     comma-style:
       - 2
       - "last"
@@ -161,7 +164,7 @@
     consistent-this:
       - 0 # TODO: make 2
       - "self"
-    constructor-super: 0 # TODO: Evaluate with ES6
+    constructor-super: 2
     curly:
       - 0 # TODO: make 2
       - "all"
@@ -179,7 +182,7 @@
       - "allow-null"
     func-names: 0 # TODO: Evaluate if good idea
     func-style: 0 # TODO: evalate if require declaration style
-    generator-star-spacing: 0 # TODO: Evaluate with ES6
+    generator-star-spacing: 2
     guard-for-in: 0 # TODO: make 2
     handle-callback-err:
       - 0 # TODO: make 2
@@ -193,7 +196,7 @@
           const: 3
           SwitchCase: 2
     key-spacing:
-      - 0 # TODO: make 2
+      - 2
       -
         beforeColon: false
         afterColon: true
@@ -223,24 +226,28 @@
       - 0 # TODO: make 2
       - "always"
     object-curly-spacing:
-      - 0 # TODO: make 2
+      - 2
       - "never"
-    object-shorthand: 0 # TODO: Evaluate with ES6
+    object-shorthand: 0 # TODO: make 2
     one-var: 0 # TODO: Evaluate with ES6
     operator-assignment: 0
     operator-linebreak:
       - 2
       - "after"
     padded-blocks:
-      - 0 # TODO: make 2
-      - "never"
+      - 2
+      -
+        blocks: "never"
+        switches: "never"
+        classes: "never"
     quote-props:
       - 2
       - "as-needed"
     quotes:
-      - 0 # TODO: make 2
+      - 2
       - "single"
-      - "avoid-escape"
+      -
+        avoidEscape: true
     radix: 0 # TODO: make 2
     semi:
       - 2
@@ -290,3 +297,58 @@
     yoda:
       - 2
       - "never"
+    import/export: 2
+    import/imports-first: 0 # TODO make 2
+    # import/namespace: 2 TODO add back in
+    import/newline-after-import: 0 # TODO make 2
+    import/no-duplicates: 2
+    import/no-unresolved:
+      - 2
+      -
+        commonjs: true
+    import/no-extraneous-dependencies: 2
+    lodash/callback-binding: 2
+    lodash/chain-style:
+      - 2
+      - "as-needed"
+    lodash/collection-method-value: 2
+    lodash/collection-return: 2
+    lodash/consistent-compose:
+      - 2
+      - "flow"
+    lodash/identity-shorthand:
+      - 2
+      - "always"
+    lodash/matches-shorthand:
+      - 2
+      - "always"
+      - 3
+    lodash/no-commit: 2
+    lodash/no-double-unwrap: 2
+    lodash/no-extra-args: 2
+    lodash/no-single-chain: 2
+    lodash/path-style:
+      - 2
+      - "string"
+    lodash/prefer-compact: 2
+    lodash/prefer-flat-map: 2
+    lodash/prefer-get:
+      - 2
+      - 3
+    lodash/prefer-is-nil: 2
+    lodash/prefer-lodash-chain: 2
+    lodash/prefer-matches:
+      - 2
+      - 3
+    lodash/prefer-over-quantifier: 2
+    lodash/prefer-reject:
+      - 2
+      - 3
+    lodash/prefer-startswith: 2
+    lodash/prefer-thru: 2
+    lodash/prefer-times: 2
+    lodash/prefer-wrapper-method: 2
+    lodash/prop-shorthand:
+      - 2
+      - "always"
+    lodash/unwrap: 2
