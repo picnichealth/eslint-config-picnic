@@ -1,5 +1,8 @@
 # NEXT
 
+# v0.3.0
+- Add rules for eslint-plugin-import
+
 # v0.2.2
 - [BUGFIX] Remove duplicate rule
 
