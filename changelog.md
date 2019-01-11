@@ -1,5 +1,10 @@
 # NEXT
 
+# v0.3.2
+- Make `eslint` work with `tslint`
+- Generate yarn lock
+- Use own rules
+
 # v0.3.1
 - Add chai and bluebird to test environment
 
